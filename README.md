@@ -29,6 +29,9 @@ Combining behavioural and academic data gives a much clearer signal
 ## Tech Stack
 Python, Pandas, Scikit-learn, XGBoost, Matplotlib, Seaborn
 
+## Next Steps
+Currently, the model is designed to run at the end of Q3. For future iterations, I plan to experiment using only engagement data from Q1 and Q2. This will allow me to measure the trade-off between model recall and intervention timing. Finding a viable predictive signal after Q2 would provide schools more time to intervene.
+
 
 
 
