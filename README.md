@@ -13,9 +13,13 @@ Trained and compared Logistic Regression and XGBoost models
 Focused on improving recall, to make sure at-risk students are not missed  
 
 
-## Results
+## Results- 
+XGBoost model chosen to balance precision and recall
 Recall: 85% (able to identify most at-risk students)  
-Precision: 83%  
+Precision: 83%
+Linear Regression option if resources are available
+Recall: 94% (identifies almost every at-risk student)
+Precision: 73% 
 The dataset was imbalanced, with dropout representing a minority class  
 The model captured clear patterns between disengagement, academic history and dropout risk
 
@@ -30,14 +34,14 @@ Conclusion: These variables all fall into two larger groups: prior academic perf
 * Method: TreeExplainer (XGBoost, preprocessed features); background = up to 200 random training rows; explained set = 800 test rows; importance = mean |SHAP|, grouped by summing one-hots per variable. Listed features are the top five.
 
 ## Key Insights
-Lower engagement (e.g. logins, time spent of materials) is strongly linked to dropout  
+Lower engagement (e.g. logins, time spent on materials) is strongly linked to dropout  
 Academic performance alone isn’t enough to identify at-risk students 
 "Ghost" students are at a much higher risk for dropping out 
-Combining behavioural and academic data gives a much clearer signal  
+Combining behavioral and academic data gives a much clearer signal  
 
 
 ## Tech Stack
-Python, Pandas, Scikit-learn, XGBoost, Matplotlib, Seaborn
+Python, Pandas, Scikit-learn, XGBoost, SHAP, Matplotlib, Seaborn
 
 ## Next Steps
 Currently, the model is designed to run at the end of Q3. For future iterations, I plan to experiment using only engagement data from Q1 and Q2. This will allow me to measure the trade-off between model recall and intervention timing. Finding a viable predictive signal after Q2 would provide schools more time to intervene. I would also experiment using real-world data to determine signal strength on realistic variations.
