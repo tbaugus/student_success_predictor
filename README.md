@@ -14,14 +14,14 @@ Focused on improving recall, to make sure at-risk students are not missed
 
 
 ## Results- 
-XGBoost model chosen to balance precision and recall
+XGBoost model chosen to balance precision and recall  
 Recall: 85% (able to identify most at-risk students)  
-Precision: 83%
-Linear Regression option if resources are available
-Recall: 94% (identifies almost every at-risk student)
-Precision: 73%
-The dataset was imbalanced, with dropout representing a minority class
-The model captured clear patterns between disengagement, academic history and dropout risk
+Precision: 83%  
+Linear Regression option if resources are available  
+Recall: 94% (identifies almost every at-risk student)  
+Precision: 73%  
+The dataset was imbalanced, with dropout representing a minority class  
+The model captured clear patterns between disengagement, academic history and dropout risk  
 
 ## Feature Importance
 Inputs are ranked by mean absolute SHAP* impact on predicted dropout risk, grouping one-hot columns back to the original variable (e.g. major, gender). The variables with the largest average influence on dropout predictions were:
