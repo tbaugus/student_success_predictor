@@ -19,8 +19,8 @@ Recall: 85% (able to identify most at-risk students)
 Precision: 83%
 Linear Regression option if resources are available
 Recall: 94% (identifies almost every at-risk student)
-Precision: 73% 
-The dataset was imbalanced, with dropout representing a minority class  
+Precision: 73%
+The dataset was imbalanced, with dropout representing a minority class
 The model captured clear patterns between disengagement, academic history and dropout risk
 
 ## Feature Importance
