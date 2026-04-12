@@ -13,7 +13,7 @@ Trained and compared Logistic Regression and XGBoost models
 Focused on improving recall, to make sure at-risk students are not missed  
 
 
-## Results- 
+## Results
 XGBoost model chosen to balance precision and recall  
 Recall: 85% (able to identify most at-risk students)  
 Precision: 83%  
